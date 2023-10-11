@@ -20,7 +20,7 @@ func send_styles(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", send_index)
-	http.HandleFunc("/style.css", send_styles)
+	http.HandleFunc("/html/style.css", send_styles)
 
 	log.Println("Start server from localhost:8080")
 	log.Fatal(http.ListenAndServe("localhost:8080", nil))
