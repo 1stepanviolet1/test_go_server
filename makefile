@@ -10,4 +10,4 @@ all:
 
 
 build:
-	@ ${COMP} build -o ${BIN_DIR}${PROJECT_NAME}.exe ${MAIN_SRC_FILE}
+	@ ${COMP} build -o ${BIN_DIR}${PROJECT_NAME} ${MAIN_SRC_FILE}
