@@ -1,14 +1,36 @@
 h1 {
-    margin-top: 3em;
-    margin-bottom: 1em;
-    font-size: 3em;
+    /* margin-bottom: 1em; */
+    font-size: 6.5em;
+    font-weight: normal;
 }
 
 p {
     font-size: 1.5em;
+    font-weight: normal;
 }
 
 body {
     color: aliceblue;
-    background-color: #222;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70em;
+    max-height: 80em;
+    width: auto;
+    height: auto;
+}
+
+.welcome-to-the-club {
+    width: 20em;
+    height: 15em;
 }
