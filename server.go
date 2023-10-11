@@ -19,8 +19,9 @@ func send_styles(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", send_index)
-	http.HandleFunc("/html/style.css", send_styles)
+	// http.HandleFunc("/", send_index)
+
+	http.Handle("/", http.FileServer(http.Dir("html/")))
 
 	log.Println("Start server from localhost:8080")
 	log.Fatal(http.ListenAndServe("localhost:8080", nil))
